@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona Tracker</title>
+</head>
+<body>
+    
+    <section id="input">
+        <div class="boxes"><input id="countryName" type="text" placeholder="country"></div>  
+      
+      <div class="boxes"><input id="startingDate" type="date" ></div>
+      
+      <div class="boxes"><input id="endingDate" type="date" ></div>
+      <div class="boxes"><input type="button" id="button" value="submit" ></div>
+      
+      <div id="displayData">
+      <ul class="list">
+      <li id="confirmed"></li>
+      <li id="active"></li>
+      <li id ="deaths"></li>
+      </ul>
+      
+      </div>
+      
+      </section>
+
+</body>
+<script src="corona.js"></script>
+</html> -->
+<html>
+    <head>
+        <title>Corona App</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="corona.css">
+    </head>
+    <body>
+        <h1>Covid Tracker</h1>
+    <div>
+        <form>
+            <div id="container">
+            <label>Enter country:</label> &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="countryName" placeholder="Enter country....">
+            <br/><br/><br>
+            <label>Enter start date:</label>&nbsp;
+            <input type="date" id="startingDate">
+            <br/><br/><br>
+            
+            <label>Enter end date:</label>&nbsp;&nbsp;&nbsp;
+            <input type="date" id="endingDate">  
+            <br/><br/><br>
+
+            <button class="btn btn-success"  id="submit-button" onClick="showData()">Submit</button>
+        </form>
+    </div>
+
+        <div id="res">
+            <h3>Confirmed Cases:<span id="confirmed"></span> </h3>
+            <h3>Active Cases: <span id="active"></span></h3>
+            <h3>Death Cases: <span id="deaths"></span> </h3>
+        </div>
+    </div>
+        <script src="corona.js"></script>
+    </body>
+</html>
